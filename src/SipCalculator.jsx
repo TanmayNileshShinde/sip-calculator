@@ -59,7 +59,7 @@ export default function SipCalculator() {
 
   const [stepUp, setStepUp] = useState(10);
   const [returnRate, setReturnRate] = useState(12);
-  const [timePeriod, setTimePeriod] = useState(10);
+  const [timePeriod, setTimePeriod] = useState(5);
   const [inflationRate, setInflationRate] = useState(7);
   const [enableInflation, setEnableInflation] = useState(true);
 
