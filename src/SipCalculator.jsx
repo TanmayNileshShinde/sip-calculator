@@ -62,6 +62,15 @@ export default function SipCalculator() {
   const [timePeriod, setTimePeriod] = useState(5);
   const [inflationRate, setInflationRate] = useState(6);
   const [enableInflation, setEnableInflation] = useState(true);
+  
+  useEffect(() => {
+    
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleModeChange = (newMode) => {
     setMode(newMode);
